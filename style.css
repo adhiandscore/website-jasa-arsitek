@@ -1,0 +1,151 @@
+:root {
+    --container-color: #1a1e21;
+    --second-color: #fd8f44;
+    --text-color: #172317;
+    --bg-color: #fff;
+}
+
+::selection {
+    color: var(--bg-color);
+    background: var(--second-color);
+
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2 rem;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+
+
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: 2s;
+    
+}
+
+
+
+/* header:hover {
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+ 
+} */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    background-color: #fffefe;
+    mask-image: linear-gradient(rgba(255, 255, 255, 1), transparent);
+
+
+}
+
+
+.nav-container > ul{
+
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    width: 300px;
+    gap: 70%;
+    font-size: medium;
+    color: rgb(17, 7, 7);
+
+}
+
+.nav-container {
+    display: grid;
+    justify-content: center;
+    transition: 2s;
+
+}
+
+/* .nav-container {
+    
+} */
+
+.nav-container .nav-link{
+    transition: 0.5s;
+}
+
+.nav-link:hover {
+    color: rgb(15, 15, 15);
+    font-weight: 700;
+    border-block-end-width: 5px;
+    border-block-end-style: solid;
+    transform: translateY(-10px);
+    border-radius: 5px;
+    
+}
+
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 5%;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--bg-color);
+
+}
+
+.login {
+    display: flex;
+    justify-content: flex-end;
+    
+    
+}
+
+.login-btn {
+    margin-right: 50px;
+    padding: 10px 20px 10px 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 4px;
+    color: var(--bg-color);
+    transition: 1s;
+}
+
+.login-btn:hover {
+    background: hsla(24, 98%, 58%, 0.6);
+    
+}
+
+.main-content .background{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    min-height: 100vh;
+    background: 
+    linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%),
+    url("https://images.unsplash.com/photo-1454692879716-176cf9058183?q=80&w=2054&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    filter: blur(1px);
+}
+
+.main-content .mask {
+    width: 100%;
+    /* background-color: #1a1e21; */
+    mask-image: linear-gradient(black, transparent);
+    padding: 20%;
+}
